@@ -1,7 +1,9 @@
-import React from 'react'
+'use client'
+
 import { Container } from '../shared'
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
+import { ModeToggle } from './theme-toggle'
 
 const Header = () => {
     return (
@@ -26,13 +28,7 @@ const Header = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <button
-                            // className='hoverLtext-white lg:text-full rounded-3xl border border-amber-800 bg-transparent px-5 py-3 text-base font-medium tracking-wide text-gray-700 transition-all duration-300 hover:border-transparent hover:bg-amber-800 hover:text-white hover:shadow-md lg:px-8 lg:py-4'
-                            className='border-b'
-                            type='button'
-                        >
-                            Contact with me
-                        </button>
+                        <ModeToggle />
                     </div>
                 </div>
             </Container>
