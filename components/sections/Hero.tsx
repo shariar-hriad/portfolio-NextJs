@@ -16,7 +16,7 @@ const Hero: FC<HeroProps> = () => {
                         <span className='mb-3 inline-block rounded-full border border-orange-900 px-3 py-1 text-stone-600 dark:text-stone-100'>
                             Building the Web, Breaking the Mold.
                         </span>
-                        <h1 className='relative mb-3 bg-gradient-to-br from-pink-500 to-orange-900 bg-clip-text text-4xl font-semibold leading-normal text-transparent lg:mb-5 lg:text-6xl lg:font-bold lg:leading-[1.3]'>
+                        <h1 className='relative mb-3 bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent lg:mb-5 lg:text-6xl lg:font-bold lg:leading-[1.3]'>
                             Empowering Businesses through Powerful Web
                             Solutions.
                         </h1>
@@ -37,7 +37,7 @@ const Hero: FC<HeroProps> = () => {
                             Recent Projects
                         </Link>
                     </div>
-                    <div className='absolute left-1/2 top-1/2 -z-[1] h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-zinc-500 to-amber-900 opacity-80 blur-[70px]' />
+                    <div className='absolute left-1/2 top-1/2 -z-[1] h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-zinc-500 to-amber-900 opacity-80 blur-[72px]' />
                 </div>
             </Container>
         </section>
