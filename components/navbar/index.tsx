@@ -4,6 +4,7 @@ import { Container } from '../shared'
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
 import { ModeToggle } from './theme-toggle'
+import { buttonVariants } from '../ui/button'
 
 const Header = () => {
     return (
@@ -23,8 +24,14 @@ const Header = () => {
                     <div className='flex items-center gap-5 p-1'>
                         <ul className='flex items-center gap-2'>
                             <li>
-                                <Link href='mailto:shariarhossainriad@gmail.com'>
-                                    <Mail className='h-6 w-6 text-amber-900' />
+                                <Link
+                                    className={buttonVariants({
+                                        size: 'icon',
+                                        variant: 'outline',
+                                    })}
+                                    href='mailto:shariarhossainriad@gmail.com'
+                                >
+                                    <Mail className='h-6 w-6' />
                                 </Link>
                             </li>
                         </ul>
