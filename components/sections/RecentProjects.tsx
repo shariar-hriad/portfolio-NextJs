@@ -3,7 +3,7 @@ import ProjectCard from '../ProjectCard'
 import { SectionTitle } from '../shared'
 
 const fetchRecentProjects = async () => {
-    const response = await fetch('http://localhost:3000/api/project')
+    const response = await fetch(process.env.BASE_URL + '/project')
     const data = await response.json()
 
     return data
