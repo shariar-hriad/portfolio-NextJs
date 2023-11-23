@@ -44,24 +44,25 @@ const DynamicForm: React.FC = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
             {fields.map((field, index) => (
                 <div key={field.id}>
-                    <Input
-                        {...register(`dynamicFields[${index}].fieldName`, {
+                    <input
+                        {...register(`links[${index}].title`, {
                             required: 'This field is required',
                         })}
-                        name={}
+                    />
+                    <input
+                        {...register(`links[${index}].url`, {
+                            required: 'This field is required',
+                        })}
                     />
                     <button type='button' onClick={() => remove(index)}>
                         Remove
                     </button>
-                    {errors.dynamicFields &&
-                        errors.dynamicFields[index]?.fieldName && (
-                            <p>
-                                {errors.dynamicFields[index].fieldName.message}
-                            </p>
-                        )}
                 </div>
             ))}
-            <button type='button' onClick={() => append({ fieldName: '' })}>
+            <button
+                type='button'
+                onClick={() => append({ title: '', url: '' })}
+            >
                 Add Field
             </button>
             <button type='submit'>Submit</button>
